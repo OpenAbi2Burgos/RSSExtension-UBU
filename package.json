@@ -1,0 +1,10 @@
+{
+  "name": "ubureaderrss",
+  "title": "UBU Lector RSS",
+  "id": "jid1-UBFzn2C7AE36jQ",
+  "description": "Lector RSS de la Universidad de Burgos",
+  "author": "OpenAbi2Burgos",
+  "icon": "data/images/icon-64.png",
+  "license": "MPL 2.0",
+  "version": "0.1"
+}
