@@ -11,20 +11,51 @@
 				<h1>Universidad de Burgos</h1>
 			</header>
 			<div id="main-content">
-			
+				<div id="tabs-1" class="tabs active">
+					<div class="news-content"></div>
+					<div class="news-content"></div>
+					<div class="news-content"></div>
+					<div class="news-content"></div>
+					<div class="news-content"></div>
+					<div class="news-content"></div>
+					<div class="news-content"></div>
+				</div>
+				<div id="tabs-2" class="tabs">
+					<div class="news-content"></div>
+					<div class="news-content"></div>
+					<div class="news-content"></div>
+					<div class="news-content"></div>
+					<div class="news-content"></div>
+					<div class="news-content"></div>
+					<div class="news-content"></div>
+				</div>
+				<div id="tabs-3" class="tabs">
+					<div class="news-content"></div>
+					<div class="news-content"></div>
+					<div class="news-content"></div>
+					<div class="news-content"></div>
+					<div class="news-content"></div>
+					<div class="news-content"></div>
+					<div class="news-content"></div>
+				</div>
 			</div>
 			<footer id="main-footer">
 				<nav id="footer-menu">
 					<ul id="menu">
-						<li><a class="menu-item active" title="Noticias" href="#">Noticias</a></li>
-						<li><a class="menu-item" title="Eventos" href="#">Eventos</a></li>
-						<li><a class="menu-item" title="Te Interesa" href="#">Te Interesa</a></li>
+						<li><a class="menu-item active" title="Noticias" href="#" id="tabs-1">Noticias</a></li>
+						<li><a class="menu-item" title="Eventos" href="#" id="tabs-2">Eventos</a></li>
+						<li><a class="menu-item" title="Te Interesa" href="#" id="tabs-3">Te Interesa</a></li>
 					</ul>
 				</nav>
 			</footer>
 		</div>
 		<script type="text/javascript">
-		
+			$("#main #main-footer #footer-menu #menu li .menu-item").click(function(){
+				$("#main #main-content .tabs").removeClass("active");
+				$("#main #main-content #"+ $(this).attr("id")).toggleClass("active");
+				$("#main #main-footer #footer-menu #menu li .menu-item").removeClass("active");
+				$("#main #main-footer #footer-menu #menu li #"+ $(this).attr("id")).toggleClass("active");
+			});
 		</script>
 	</body>
 </html>
