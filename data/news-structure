@@ -1,0 +1,10 @@
+<div class="news">
+<div class="news-title">
+<h2>Titulo de la noticia</h2>
+</div>
+<div class="news-date">02/03/2015</div>
+<div class="news-body">
+<p>Cuerpo de la noticia</p>
+</div>
+<div class="news-image"><img src="http://wwww.ubu.es/sites/default/files/styles/pagefront_phto_blocks/public/news/images/fiesta_universidad_dia_doctor001.jpg" /></div>
+</div>
